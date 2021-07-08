@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5000;
 const server = express();
 
 server.get('/', (req, res) => {
-	res.status(200).json(Object.keys(req));
+	res.status(200).send("holler");
 });
 
 server.listen(PORT, () => {
